@@ -1,9 +1,16 @@
 import Vue from 'vue';
-import Create from '../../components/Create.vue';
+import Create from '../../src/components/Create.vue';
 
 describe('Create.vue', () => {
-  it('should have a title', () => {
+  const vm = new Vue({
+    el: document.createElement('div'),
+    render: (h) => h(Create)
+  })
 
+  it('should have a title', () => {
+    const title = vm.$el.querySelector('.title');
+
+    expect(title).toBeDefined();
   })
   it('should allow creation of multiple choice questions', () => {
 
@@ -21,6 +28,6 @@ describe('Create.vue', () => {
 
   })
   xit('should allow comparison with old quizzes', () => {
-    
+
   })
 })
