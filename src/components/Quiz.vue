@@ -9,6 +9,7 @@
     <button name="submit" type="button">Submit</button>
     </form>
     <p v-for="question in questions">{{question.answer}}</p>
+  </div>
 </template>
 
 <script>
