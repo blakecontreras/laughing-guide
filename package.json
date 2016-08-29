@@ -1,7 +1,8 @@
 {
   "name": "laughing-guide",
   "description": "An easy way to craft quizzes.",
-  "author": "Blake Contreras <shardsofsilver@gmail.com>",
+  "author": "Blake Contreras",
+  "license": "MIT",
   "scripts": {
     "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o dist/build.js",
     "serve": "http-server -c 1 -a localhost",
