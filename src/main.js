@@ -1,8 +1,21 @@
 import Vue from 'vue'
 import App from './App.vue'
-import VueRouter from 'vue-router'
+// import Hello from './components/Hello.vue'
 
-Vue.use(VueRouter)
+// Vue Router removed until 2.0 docs are updated
+
+// import VueRouter from 'vue-router'
+// Vue.use(VueRouter);
+
+// const router = new VueRouter();
+
+// router.map({
+//   '/': {
+//     component: Hello
+//   }
+// })
+
+// router.start(App, '#app')
 
 new Vue({ // eslint-disable-line no-new
   el: '#app',
